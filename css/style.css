@@ -27,9 +27,9 @@ caption{
 body{
   font-family: "Andika", Sans-Serif;
   background-image: url("../images/pigeon-background.JPEG");
+  color: #000000;
   background-color:#DDDDDD;
   background-repeat: no-repeat;
-  color: #000000;
   font-size: 16px;
   margin: 1.2em;
   background-size: cover ;
@@ -62,6 +62,7 @@ a{
 
 td{
   text-align: center;
+  color:#000000;
   border-top: 2px solid black;
   padding: 10px; 
 }
@@ -83,6 +84,8 @@ tr:nth-child(even) {
 
 
 .rowhead{
+  text-align: center;
+  vertical-align: middle;
   border-top: 2px solid black;
   border-right:  2px solid black;
   border-left:   2px solid black;
@@ -97,10 +100,14 @@ table{
 }
 
 tbody tr:hover {
-  color: #000000;
   background-color:#7e0825;
   opacity: 0.25;
 }
+
+td:hover {
+  color: black;
+}
+
 
 
 /* I gave you the selector, but not the property-value pair. 
@@ -112,9 +119,8 @@ thead tr:first-child th:first-child{
 thead tr:last-child th:last-child{
   border-radius: 0px 50px 0px 0px;
 }
-
-tr:first-child td:first-child{
-  border-radius: 0px 0px 0px 50px;
+th.rowhead:first-child th:first-child{
+  border-bottom-left-radius: 50px;
 }
 
 tr:last-child td:last-child{
