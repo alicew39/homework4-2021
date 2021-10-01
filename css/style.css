@@ -67,6 +67,7 @@ td{
   padding: 10px; 
 }
 
+
 tr:nth-child(even) {
   background-color: #D1D1D1;
 }
@@ -99,14 +100,6 @@ table{
   border-radius: 50px;
 }
 
-tbody tr:hover {
-  background-color:#7e0825;
-  opacity: 0.25;
-}
-
-td:hover {
-  color: black;
-}
 
 
 
@@ -119,14 +112,20 @@ thead tr:first-child th:first-child{
 thead tr:last-child th:last-child{
   border-radius: 0px 50px 0px 0px;
 }
-th.rowhead:first-child th:first-child{
-  border-bottom-left-radius: 50px;
-}
+
 
 tr:last-child td:last-child{
   border-radius: 0px 0px 50px 0px;
 }
 
+tr:last-child .rowhead{
+  border-bottom-left-radius: 50px;
+}
+
+
+tbody tr:hover {
+  background: rgba(128, 8, 37, 0.25);
+}
 
 /*Add selectors and rules here*/
 
